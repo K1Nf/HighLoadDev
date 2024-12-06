@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/css/Register.css">
+	<title>Регистрация</title>
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<h1 id="home">Event</h1>
+		</div>
+		<div class="header-center">
+			<button id="toSearch">Расширенный поиск</button>
+			<form action="#">
+				<input type="text" placeholder="Поиск..." id="name" name="name">
+				<button type="submit">Поиск</button>
+			</form>
+		</div>
+		<div class="header-right">
+			<button id="myPage">Мой аккаунт</button>
+			<button>Выйти</button>
+		</div>
+	</header>
+
+	<!--Сделать fit-content для кнопок из шапки, чтобы норм растягивалось-->
+	<div class="main">
+		<div class="register">
+			<div>
+				<h1 style="text-align: center; font-size: 2.25vw;">Регистрация</h1>
+			</div>
+			<div class="forma">
+				<form method="post">
+					<div style="margin-bottom: 3%;">
+						<label>Введите фамилию</label>
+						<input type="text" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Введите имя</label>
+						<input type="text" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Введите отчество</label>
+						<input type="text" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Введите никнейм</label>
+						<input type="text" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Введите эл. почту</label>
+						<input type="email" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите телефон</label>
+						<input type="tel" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Введите пароль</label>
+						<input type="password" name="">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите город</label>
+						<input type="text" name="">
+					</div>
+
+					<div style="margin-bottom: 3%;">
+						<label>Введите дату рождения</label>
+						<input type="date" name="">
+					</div>
+					<div style="margin-bottom: 3%; display: flex; justify-content: space-around;">
+						<button>Авторизация</button>
+						<button id="registerPOST">Регистрация</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<h3>ITS MY WEBSITE</h3>
+	</footer>
+
+	<script src="../../javascript/authandreg.js"></script>
+
+</body>
+</html>

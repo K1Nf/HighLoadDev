@@ -1,0 +1,116 @@
+
+
+.main{
+	min-height: 80%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5%;
+}
+.event{
+	background-color: ghostwhite;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	padding: 5%;
+	border: solid 1px black;
+	border-radius: 3%;
+	box-sizing:border-box;
+	margin-bottom: 10%;
+	box-shadow: 0.5vw 1vh lightgray;
+}
+.event h1{
+	font-size:2vw; 
+	text-align:center;
+}
+
+.description h3{
+	width: 15vw;
+	text-align: right;
+	padding-right: 1vw;
+	display: inline-block;
+	font-size: 1.5vw;
+}
+.description div{
+	margin-bottom:2vh;
+}
+
+.description p {
+	display: inline-block;
+	font-size: 1.5vw;
+}
+.descP{
+	 
+	display: inline !important;
+	line-height: 3vh;
+}
+
+.manage{
+	text-align: center;
+}
+
+.manage label{
+	font-size: 2vw !important;
+}
+
+.manage button {
+	background-color: black;
+	color: whitesmoke;
+	width: fit-content;
+	padding: 1%;
+	border-radius: 7px;
+	font-size: 1vw;
+	font: bold;
+	cursor: pointer;
+}
+
+.manage button:hover{
+	background-color: #014;
+}
+
+.author{
+	text-align: center;
+}
+.myc2{
+	display: inline-block;
+	width: 40%;
+}
+.myc2 img{
+	width: 70%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.myc3{
+	display: inline-block;
+	width: fit-content !important;
+}
+.myc3 h1{
+	text-align: left;
+	width: fit-content !important;
+}
+.myc3 strong{
+	width: fit-content !important;
+}
+
+footer{
+	background-color: black;
+	color: whitesmoke;
+	height: 10%;
+	max-height: 10%;
+}
+
+#addCommentPOST {
+	background-color: black;
+	color: whitesmoke;
+	width: fit-content;
+	padding: 1%;
+	border-radius: 7px;
+	font-size: 0.8vw;
+	font: bold;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+#addCommentPOST:hover {
+	background-color: #014;
+}

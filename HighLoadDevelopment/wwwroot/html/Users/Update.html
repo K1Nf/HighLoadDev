@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" />
+    <link rel="stylesheet" type="text/css" href="/css/general.css">
+    <link rel="stylesheet" type="text/css" href="/css/accountupdate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+          integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+          crossorigin="anonymous" />
+    <title>Редактирование профиля</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1 id="home">Meets</h1>
+        </div>
+        <div class="header-center">
+            <button id="toSearch">Расширенный поиск</button>
+            <form name="searchform">
+                <input type="text" placeholder="Поиск..." id="name" name="searchname">
+                <button type="submit">Поиск</button>
+            </form>
+        </div>
+        <div class="header-right">
+            <button id="myPage">Мой аккаунт</button>
+            <button>Выйти</button>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="account">
+            <h1 style="font-size:1.8vw; text-align: center; margin-bottom:3vh;">Редактирование профиля</h1>
+            <form name="updateuser">
+                <div style="display: flex; justify-content: space-around;">
+                    <div style="display: inline-block; width: 40%;">
+                        <div style="margin-bottom: 3%;" hidden>
+                            <label hidden>Фамилия</label>
+                            <input hidden type="text" name="id" value="">
+                        </div>
+                        <div style="margin-bottom: 3%;">
+                            <label>Фамилия</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                        <div style="margin-bottom: 3%;">
+                            <label>Имя</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                        <div style="margin-bottom: 3%;">
+                            <label>Отчество</label>
+                            <input type="text" id="secondname" name="secondname">
+                        </div>
+                        <div style="margin-bottom: 3%;">
+                            <label>Город</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div style="margin-bottom: 1%; margin-top: 3%;">
+                            <label style="display: inline-block; width: 10.5vw ">Поменять пароль: </label>
+                            <input style="display: inline-block; width: 2vw; block-size: 1.5vw; vertical-align: middle" type="checkbox" onclick="checkpass()">
+                        </div>
+                        <div id="div1" style="margin-bottom: 1%;" hidden>
+                            <label>Пароль:</label>
+                            <input type="password" name="password">
+                        </div>
+                        <div id="div2" style="margin-bottom: 3%;" hidden>
+                            <label>Подтвердите пароль:</label>
+                            <input type="password" name="repeatpasswod">
+                        </div>
+                    </div>
+                    <div style="display: inline-block; height: 100%; width: 40%;">
+                        <div style="margin-bottom: 2%;">
+                            <label>О себе</label>
+                            <textarea id="information" name="information"></textarea>
+                        </div>
+                        <div style="margin-bottom: 2%;">
+                            <label>Мои интересы: </label>
+                            <label><strong id="mytags"></strong></label>
+                        </div>
+                        <div style="width: fit-content; margin-top: 6.5%;">
+                            <label style="text-align: center">Укажите, что вам интересно</label>
+                            <select multiple id="tags" name="tagsIds">
+                            </select>
+                        </div>
+                        <div style="margin-top: 6.5%;">
+                            <label style="display: inline-block; ">Загрузите фотографию</label>
+                            <div>
+                                <input type="file" name="" style="width: 20vw; display: inline-block;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <button id="btnsbmt" type="submit">Применить изменения</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <h3>ITS MY WEBSITE</h3>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="/javascript/main.js"></script>
+    <script src="/javascript/accountupdate.js"></script>
+</body>
+</html>

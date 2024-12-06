@@ -1,0 +1,103 @@
+
+
+.main{
+	min-height: 80%;
+	margin:5% 10%;
+}
+
+
+.event{
+	background-color: ghostwhite;
+	display: inline-block;
+	width: 70%;
+	padding: 5%;
+	border: solid 1px black;
+	border-radius: 30px;
+	box-sizing:border-box;
+	box-shadow: 0.5vw 1vh lightgray;
+}
+.event h1{
+	font-size: 2vw;
+}
+
+
+
+.forma form label {
+	display: block;
+	font-size: 1.7vw;
+	width: 100%;
+}
+
+.forma form input {
+	display: block;
+	font-size: 1.2vw;
+	border-radius: 13px;
+	width: 99%;
+	padding-left: 1%;
+	height: 4vh;
+}
+.forma form textarea {
+	display: block;
+	width: 98%;
+	font-size: 1.2vw;
+	border-radius: 13px;
+	padding-left: 2%;
+	height: 10vh;
+}
+
+
+.forma form button {
+	/*margin: auto;*/
+	background-color: whitesmoke;
+	width: fit-content;
+	padding: 2%;
+	height: fit-content;
+	color: black;
+	border-radius: 7px;
+	font-size: 1vw;
+	cursor: pointer;
+}
+.forma form select {
+	width: 90%;
+	min-height: 13vh;
+	font-size: 1.2vw;
+	border-radius: 13px;
+	padding-left: 2%;
+}
+
+.forma{
+	display: block;
+	width: 70%;
+}
+
+.eventdelete{
+	font-size: 1.5vw;
+}
+.eventdelete label{
+	display: inline-block;
+	font-size: 1.5vw;
+	width: 30%;
+	vertical-align: top;
+}
+.eventdelete p{
+	display: inline-block;
+	width: 69%;
+}
+
+.eventdelete button{
+	background-color: whitesmoke;
+	width: fit-content;
+	padding: 1%; 
+	height: fit-content;
+	color: black;
+	border-radius: 7px;
+	font-size: 1vw;
+	cursor: pointer;
+}
+
+footer{
+	background-color: black;
+	color: whitesmoke;
+	height: 10%;
+	max-height: 10%;
+}

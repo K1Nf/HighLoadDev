@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/general.css">
+    <link rel="stylesheet" type="text/css" href="/css/search.css">
+    <title>Расширенный поиск</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1 id="home">Meets</h1>
+        </div>
+        <div class="header-center">
+            <button id="toSearch">Расширенный поиск</button>
+            <form name="searchform">
+                <input type="text" placeholder="Поиск..." id="name" name="searchname">
+                <button type="submit">Поиск</button>
+            </form>
+        </div>
+        <div class="header-right">
+            <button id="myPage">Мой аккаунт</button>
+            <button id="logOut">Выйти</button>
+        </div>
+    </header>
+
+    <!--Сделать fit-content для кнопок из шапки, чтобы норм растягивалось-->
+    <div class="main">
+        <div class="event">
+            <div>
+                <h1 style="font-size: 2.25vw; margin-bottom: 3%;" id="title">Расширенный поиск</h1>
+            </div>
+            <div class="forma">
+                <form method="post" name="update">
+                    <div style="margin-bottom: 3%;">
+                        <label>Введите название</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div style="margin-bottom: 3%;">
+                        <label>Укажите место</label>
+                        <input type="text" name="place">
+                    </div>
+                    <div style="margin-bottom: 3%;">
+                        <label>Укажите время начала</label>
+                        <input type="time" name="timeStart">
+                    </div>
+                    <div style="margin-bottom: 3%;">
+                        <label>Укажите время окончания</label>
+                        <input type="time" name="timeEnd">
+                    </div>
+                    <div style="margin-bottom: 3%;">
+                        <label>Укажите дату</label>
+                        <input type="date" name="date">
+                    </div>
+                    <div style="margin-bottom: 3%;">
+                        <label>Укажите тэги</label>
+                        <select multiple id="tags" name="tagsIds">
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 3%;">
+                        <label>Описание</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                    <div style="margin-bottom: 3%; display: flex; justify-content: space-around;">
+                        <button type="button" id="goback">Назад</button>
+                        <button type="submit">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <h3>ITS MY WEBSITE</h3>
+    </footer>
+    <script src="/javascript/main.js"></script>
+    <script src="/javascript/search.js"></script>
+</body>
+</html>

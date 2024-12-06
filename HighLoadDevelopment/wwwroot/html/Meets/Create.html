@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" />
+	<link rel="stylesheet" type="text/css" href="/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/css/eventcrud.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+		  integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+		  crossorigin="anonymous" />
+	<title>Создание встречи</title>
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<h1 id="home">Meets</h1>
+		</div>
+		<div class="header-center">
+			<button id="toSearch">Расширенный поиск</button>
+			<form name="searchform">
+				<input type="text" placeholder="Поиск..." id="name" name="searchname">
+				<button type="submit">Поиск</button>
+			</form>
+		</div>
+		<div class="header-right">
+			<button id="myPage">Мой аккаунт</button>
+			<button id="logIut">Выйти</button>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="event">
+			<div>
+				<h1 style="font-size: 2.25vw; margin-bottom: 3%;">Создание встречи</h1>
+			</div>
+			<div class="forma">
+				<form method="post" name="newEvent">
+					<div style="margin-bottom: 3%;">
+						<label>Введите название</label>
+						<input type="text" name="name">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите место</label>
+						<input type="text" name="place">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите время начала</label>
+						<input type="time" name="timeStart">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите время окончания</label>
+						<input type="time" name="timeEnd">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите дату</label>
+						<input type="date" name="date" max="2026">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Количество гостей</label>
+						<input type="number" name="guestscount">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Укажите тэги</label>
+						<select multiple id="tags" name="tagsIds">
+						</select>
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Добавьте описание</label>
+						<textarea name="description"></textarea>
+					</div>
+					<div style="margin-bottom: 3%; display: flex; justify-content: space-around;">
+						<button type="button" onclick="window.location.href = '../User/Account.html'">Вернуться</button>
+						<button type="submit">Создать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<footer>
+		<h3>ITS MY WEBSITE</h3>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous">
+	</script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	<script src="/javascript/main.js"></script>
+	<script src="/javascript/eventcreate.js"></script>
+</body>
+</html>

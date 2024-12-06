@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/css/EventPage.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<h1 id="home">Meets</h1>
+		</div>
+		<div class="header-center">
+			<button id="toSearch">Расширенный поиск</button>
+			<form name="searchform">
+				<input type="text" placeholder="Поиск..." id="name" name="searchname">
+				<button type="submit">Поиск</button>
+			</form>
+		</div>
+		<div class="header-right">
+			<button id="myPage">Мой аккаунт</button>
+			<button id="logIut">Выйти</button>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="event">
+			<div class="author">
+				<div class="myc2">
+					<img id="avatar" src="" />
+				</div>
+				<div class="myc3">
+					<h1 style="display: inline-block !important; cursor: pointer;" id="author"><strong id="username"></strong></h1>
+					<h1 style="display: inline-block !important"><strong id="rating"></strong></h1>
+					<h1><strong id="eventname"></strong></h1>
+				</div>
+			</div>
+			<div class="description">
+				<div>
+					<h3>Статус:</h3>
+					<p id="status"></p>
+				</div>
+				<div>
+					<h3>Дата и время:</h3>
+					<p id="dateandtime"></p>
+				</div>
+				<div>
+					<h3>Город:</h3>
+					<p id="city"></p>
+				</div>
+				<div>
+					<h3>Место:</h3>
+					<p id="place"></p>
+				</div>
+				<div>
+					<h3>Количество гостей:</h3>
+					<p id="guests"></p>
+				</div>
+				<div>
+					<h3>Описание:</h3>
+					<p class="descP" id="description"></p>
+				</div>
+				<div>
+					<h3>Тэги:</h3>
+					<p><strong id="tags"></strong></p>
+				</div>
+				<div>
+					<h3>Гости:</h3>
+					<p id="guestsnames" style="display: none"></p>
+				</div>
+			</div>
+			<div class="manage" id="manageButtons">
+				<button style="margin-right: 3%;" id="cancelEvent">Отменить встречу</button>
+				<button style="margin-right: 3%;" id="changeEvent">Изменить встречу</button>
+				<button id="showGuestList">Посмотреть гостей</button>
+			</div>
+			<div class="manage" id="joinButtons">
+				<label style="font-size: 1.3vw; margin-right: 1vw">Вы не заявлены на эту встречу</label>
+				<button id="join" style="margin-right: 3%;">Присоединиться к встрече</button>
+			</div>
+			<div class="manage" id="addCommentButtonSection">
+				<button id="addComment" style="margin-right: 3%;">Добавить комментарий</button>
+			</div>
+			<div class="manage" id="LeaveButtons">
+				<label style="font-size: 1.3vw; margin-right: 1vw">Вы зарегистрированы на эту встречу</label>
+				<button id="leave">Покинуть встречу</button>
+			</div>
+			<div class="manage" id="markForm">
+				<form>
+					<label style="font-size: 1.2vw;"><strong>Оценка организатору:</strong></label>
+					<input type="number" name="rating" value="5" min="1" max="10" style="width:5%; font-size: 1.2vw; padding-left: 0.5%;">
+					<button>Оценить</button>
+				</form>
+			</div>
+		</div>
+		<h1 id="addCommH1" style="font-size: 2.2vw; margin-left: 5%; display: none">Добавить комментарий</h1>
+		<div id="addCommentSection" class="event" style="display: none">
+			<div>
+				<textarea id="commentText" style="resize:none; width: 100%; height: 12vh; font-size:175%;"> </textarea>
+				<div>
+					<img src="https://avatars.mds.yandex.net/get-entity_search/4759071/1011754557/S600xU_2x" style="width:2.5vw; height:2.5vw; border-radius: 100%; border: solid 1px black" />
+					<h2 style="display: inline;">UserName</h2>
+					<button id="addCommentPOST">Добавить комментарий</button>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<h1 style="font-size: 2.2vw; margin-left: 5%; margin-top: 5%;">Комментарии</h1>
+		<div id="commentsSection" class="event">
+			<!--<div class="comment" style="margin-bottom:3%;">
+				<div>
+					<img src="https://avatars.mds.yandex.net/get-entity_search/4759071/1011754557/S600xU_2x" style="width:2.5vw; height:2.5vw; border-radius: 100%; border: solid 1px black" />
+					<h2 style="display: inline;">UserName</h2>
+					<h5 style="display: inline; margin-left: 1%">28.11.2024 10:47</h5>
+				</div>
+				<div style="border: solid 1px black; background-color: white; padding: 2%;">
+					<p id="commentText" style="width: fit-content; height: fit-content; font-size: 130%;">
+						Lorem ipsum odor amet, consectetuer adipiscing elit. Vehicula magna nec facilisis eu consequat nam feugiat. Phasellus ornare hendrerit dis hac risus lorem. Vel suspendisse netus viverra laoreet metus sed at. Senectus porttitor morbi conubia metus habitant fusce enim. Lorem nec nibh porttitor facilisi netus sociosqu sagittis.
+
+						Accumsan cras nostra faucibus sollicitudin tellus semper. Hendrerit nibh nunc et iaculis interdum bibendum. Hendrerit sollicitudin ipsum leo malesuada placerat urna. Velit sapien litora venenatis euismod sollicitudin suspendisse habitasse sed. Congue elit purus vulputate varius semper aenean. Posuere hac est adipiscing semper conubia. Mus purus platea non; interdum dolor enim. Lectus ante mollis sit maecenas montes. Accumsan blandit lectus porttitor nam ipsum vitae imperdiet vitae. Facilisis turpis malesuada eleifend erat id, taciti ultricies nisl habitasse.
+
+						Massa quam sit placerat et parturient habitant. Donec enim metus ullamcorper dui congue iaculis taciti. Magnis porta amet sagittis nascetur condimentum potenti. Inceptos integer mauris aenean quis dis ullamcorper. Sit taciti venenatis volutpat pharetra habitasse ipsum. Lobortis diam lacus dapibus lacus sagittis nisi nam quisque. Pharetra sit dapibus gravida, molestie malesuada convallis.
+
+						Facilisis augue montes neque risus elementum risus. Curabitur primis tincidunt ultrices rhoncus eget. Orci consequat sit nam risus tellus orci diam habitant. Pharetra fames pulvinar justo mauris quam ultricies massa congue. Maecenas pulvinar aliquam, ut morbi himenaeos viverra himenaeos pharetra sit. Efficitur egestas massa aliquet diam non enim curabitur sociosqu. Facilisis maximus augue suspendisse arcu maximus adipiscing maecenas.
+
+						Lectus pharetra vestibulum cursus mus potenti scelerisque blandit fames. Nullam volutpat ac faucibus ultrices vulputate porttitor conubia. Sit ultricies per nostra aptent dapibus! Et fringilla semper et aliquet vulputate inceptos ipsum eu. Class sociosqu cubilia rhoncus facilisi morbi. Quam dignissim phasellus elementum consectetur nullam quam senectus cras. Accumsan rutrum laoreet varius luctus lobortis dignissim et. Sed proin iaculis platea semper curae. Quis fusce vel ridiculus erat neque sit parturient.
+					</p>
+				</div>
+			</div>-->
+			
+		</div>
+	</div>
+
+
+	<footer>
+		<h3>ITS MY WEBSITE</h3>
+	</footer>
+	
+
+
+	<script src="/javascript/main.js"></script>
+	<script src="/javascript/eventPage.js"></script>
+</body>
+</html>

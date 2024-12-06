@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/css/Register.css">
+	<title>Авторизация</title>
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<h1 id="home">Event</h1>
+		</div>
+		<div class="header-center">
+			<button id="toSearch">Расширенный поиск</button>
+			<form action="#">
+				<input type="text" placeholder="Поиск..." id="name" name="name">
+				<button type="submit">Поиск</button>
+			</form>
+		</div>
+		<div class="header-right">
+			<button id="myPage">Мой аккаунт</button>
+			<button>Выйти</button>
+		</div>
+	</header>
+	<!--Сделать fit-content для кнопок из шапки, чтобы норм растягивалось-->
+	<div class="main" id="mainauthorize">
+		<div class="auth">
+			<div>
+				<h1 style="text-align: center; font-size: 2.25vw;">Авторизация</h1>
+			</div>
+			<div class="forma">
+				<form method="post" name="auth">
+					<div style="margin-bottom: 3%;">
+						<label>Введите эл. почту или логин</label>
+						<input type="text" name="login" value="Sonya">
+					</div>
+					<div style="margin-bottom: 3%;">
+						<label>Введите пароль</label>
+						<input type="password" name="password" value="123">
+					</div>
+					<div style="margin-bottom: 3%; display: flex; justify-content: space-around;">
+						<button id="register">Регистрация</button>
+						<button type="submit">Авторизация</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<h3>ITS MY WEBSITE</h3>
+	</footer>
+
+	<script src="/javascript/authandreg.js"></script>
+
+</body>
+</html>

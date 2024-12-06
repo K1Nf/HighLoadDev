@@ -1,0 +1,137 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\Account.css",
+      "PackagePath": "staticwebassets\\css\\Account.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\EventPage.css",
+      "PackagePath": "staticwebassets\\css\\EventPage.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\Events.css",
+      "PackagePath": "staticwebassets\\css\\Events.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\accountupdate.css",
+      "PackagePath": "staticwebassets\\css\\accountupdate.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\eventcrud.css",
+      "PackagePath": "staticwebassets\\css\\eventcrud.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\general.css",
+      "PackagePath": "staticwebassets\\css\\general.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\css\\search.css",
+      "PackagePath": "staticwebassets\\css\\search.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Meets\\Cancel.html",
+      "PackagePath": "staticwebassets\\html\\Meets\\Cancel.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Meets\\Create.html",
+      "PackagePath": "staticwebassets\\html\\Meets\\Create.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Meets\\Search.html",
+      "PackagePath": "staticwebassets\\html\\Meets\\Search.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Meets\\Update.html",
+      "PackagePath": "staticwebassets\\html\\Meets\\Update.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Meets\\meet.html",
+      "PackagePath": "staticwebassets\\html\\Meets\\meet.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Users\\Account.html",
+      "PackagePath": "staticwebassets\\html\\Users\\Account.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Users\\Authorize.html",
+      "PackagePath": "staticwebassets\\html\\Users\\Authorize.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Users\\Register.html",
+      "PackagePath": "staticwebassets\\html\\Users\\Register.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\html\\Users\\Update.html",
+      "PackagePath": "staticwebassets\\html\\Users\\Update.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\account.js",
+      "PackagePath": "staticwebassets\\javascript\\account.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\accountupdate.js",
+      "PackagePath": "staticwebassets\\javascript\\accountupdate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\authandreg.js",
+      "PackagePath": "staticwebassets\\javascript\\authandreg.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\eventPage.js",
+      "PackagePath": "staticwebassets\\javascript\\eventPage.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\eventcancel.js",
+      "PackagePath": "staticwebassets\\javascript\\eventcancel.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\eventcreate.js",
+      "PackagePath": "staticwebassets\\javascript\\eventcreate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\events.js",
+      "PackagePath": "staticwebassets\\javascript\\events.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\eventupdate.js",
+      "PackagePath": "staticwebassets\\javascript\\eventupdate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\main.js",
+      "PackagePath": "staticwebassets\\javascript\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\HighLoadDevelopment\\HighLoadDevelopment\\wwwroot\\javascript\\search.js",
+      "PackagePath": "staticwebassets\\javascript\\search.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.HighLoadDevelopment.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.HighLoadDevelopment.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.HighLoadDevelopment.props",
+      "PackagePath": "build\\HighLoadDevelopment.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.HighLoadDevelopment.props",
+      "PackagePath": "buildMultiTargeting\\HighLoadDevelopment.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.HighLoadDevelopment.props",
+      "PackagePath": "buildTransitive\\HighLoadDevelopment.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

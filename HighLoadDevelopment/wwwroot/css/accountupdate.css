@@ -1,0 +1,53 @@
+
+
+
+.main{
+	min-height: 80%;
+	margin: 5% 17%;
+}
+.account{
+	background-color: ghostwhite;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	padding: 5%;
+	border: solid 1px black;
+	border-radius: 10px;
+	box-sizing:border-box;
+	box-shadow: 0.5vw 1vh lightgray;
+}
+.account form textarea {
+	display: block;
+	width: 98%;
+	font-size: 1.2vw;
+	border-radius: 13px;
+	padding-left: 2%;
+	height: 10vh;
+}
+	.account form label {
+		width: 100%;
+		font-size: 1.2vw;
+		border-radius: 13px;
+	}
+	.account form input {
+		width: 100%;
+		font-size: 1.2vw;
+		border-radius: 13px;
+		padding-left: 2%;
+	}
+	.account form select {
+		width: 90%;
+		min-height: 13vh;
+		font-size: 1.2vw;
+		border-radius: 13px;
+		padding-left: 2%;
+	}
+
+
+
+footer{
+	background-color: black;
+	color: whitesmoke;
+	height: 10%;
+	max-height: 10%;
+}

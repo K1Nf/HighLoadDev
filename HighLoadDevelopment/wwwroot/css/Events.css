@@ -1,0 +1,87 @@
+.main{
+	min-height: 80%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+}
+
+
+.event{
+	background-color: ghostwhite;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	padding: 5%;
+	border: solid 1px black;
+	border-radius: 3%;
+	box-sizing:border-box;
+	margin-bottom: 10%;
+	box-shadow: 0.5vw 1vh lightgray;
+}
+
+
+.leftpart {
+	text-align: center;
+	font-size: 150%;
+}
+
+.leftpart button {
+	display: inline;
+	background-color: whitesmoke;
+	width: fit-content;
+	padding: 2%;
+	height: fit-content;
+	color: black;
+	border-radius: 7px;
+	font-size: 1vw;
+	font: bold;
+	cursor: pointer;
+	margin-top: 2%;
+}
+
+.leftpart{
+	float: left;
+	width: 47.5%;
+	margin-right: 2.5%;
+}
+
+.leftpartimg {
+	border-radius: 45%;
+	width: 100%;
+	height: auto;
+}
+
+.leftpart h2{
+	font-size: 2vw;
+}
+
+
+.rightpart{
+	float: right;
+	width: 47.5%;
+	margin-left: 2.5%;
+}
+
+.rightpart div {
+	margin-bottom: 5%;
+	font-size: 0.9vw;
+}
+
+.rightpart h2 {
+	display: inline-block;
+	min-width: 30%;
+	font-size: 1.5vw;
+}
+
+.rightpart p {
+	font-size: 150%;
+	display: inline-block;
+}
+
+
+footer{
+	background-color: black;
+	color: whitesmoke;
+	height: 10%;
+	max-height: 10%;
+}

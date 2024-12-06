@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/css/eventcrud.css">
+	<title>Отмена встречи</title>
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<h1 id="home">Meets</h1>
+		</div>
+		<div class="header-center">
+			<button id="toSearch">Расширенный поиск</button>
+			<form name="searchform">
+				<input type="text" placeholder="Поиск..." id="name" name="searchname">
+				<button type="submit">Поиск</button>
+			</form>
+		</div>
+		<div class="header-right">
+			<button id="myPage">Мой аккаунт</button>
+			<button id="logIut">Выйти</button>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="event">
+			<div>
+				<h1 style="font-size: 2.25vw; margin-bottom: 3%;" id="title"></h1>
+			</div>
+			<div class="eventdelete">
+				<div style="margin-bottom: 2%;">
+					<label><strong>Статус: </strong></label>
+					<p>Запланировано</p>
+				</div>
+				<div style="margin-bottom: 2%;">
+					<label><strong>Название: </strong></label>
+					<p id="name1"></p>
+				</div>
+				<div style="margin-bottom: 2%;">
+					<label><strong>Место: </strong></label>
+					<p id="place"></p>
+				</div>
+				<div style="margin-bottom: 2%;">
+					<label><strong>Дата и время: </strong></label>
+					<p id="dateandtime"></p>
+				</div>
+				<div style="margin-bottom: 2%;">
+					<label><strong>Количество гостей: </strong></label>
+					<p id="guests"></p>
+				</div>
+				<div style="margin-bottom: 2%;">
+					<label><strong>Описание: </strong></label>
+					<p id="description"></p>
+				</div>
+				<div style="margin-bottom: 2%;">
+					<label><strong>Тэги: </strong></label>
+					<p id="tags"></p>
+				</div>
+				<div style="margin-bottom: 2%; margin-top: 8%; ">
+					<button style="background-color: blue; color: whitesmoke;">Вернуться</button>
+					<button id="cancelEvent" style="margin-left: 5%; background-color: red; color: whitesmoke;">Отменить</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<footer>
+		<h3>ITS MY WEBSITE</h3>
+	</footer>
+	<script src="/javascript/main.js"></script>
+	<script src="/javascript/eventcancel.js"></script>
+</body>
+</html>
