@@ -115,5 +115,33 @@ namespace HighLoadDevelopment.Models
             }
             return Rating;
         }
+
+
+
+        public static int CanUserCreateMeeting(decimal userRating)
+        {
+            int meetingsToCreateCount = 0;
+            if(userRating >= 9)
+            {
+                meetingsToCreateCount = 10;
+            }
+            else if(userRating >= 7)
+            {
+                meetingsToCreateCount = 5;
+            }
+            else if (userRating >= 4)
+            {
+                meetingsToCreateCount = 3;
+            }
+            else if (userRating >= 1)
+            {
+                meetingsToCreateCount = 2;
+            }
+            else
+            {
+                meetingsToCreateCount = 1;
+            }
+            return meetingsToCreateCount;
+        }
     }
 }

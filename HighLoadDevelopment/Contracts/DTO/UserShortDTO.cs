@@ -10,6 +10,7 @@ namespace HighLoadDevelopment.Contracts.DTO
 
         [EmailAddress]
         public string City { get; set; }
+        public string ImageLink { get; set; }
         
         public decimal Rating { get; set; }
         public List<TagDTO> TagsDTO { get; set; } = [];

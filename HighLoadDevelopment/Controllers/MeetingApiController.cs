@@ -56,13 +56,15 @@ namespace HighLoadDevelopment.Controllers
 
 
         [HttpPost("create")]
-        public async Task<IActionResult> CreateMeetingAsync([FromBody] CreateMeetingRequest createMeetingRequest)
+        public async Task<IActionResult> CreateMeetingAsync([FromForm] CreateMeetingRequest createMeetingRequest)
         {
-            //Guid tokenId = Guid.NewGuid();
             Guid userId = Guid.Parse(User.FindFirst("UserIdentity")!.Value);
-            //Guid tokenId = Guid.Parse(User.FindFirst(jwtConfiguration.UserIdentity)!.Value);
             var meetingResult = await _meetingService.CreateMeeting(createMeetingRequest, userId);
 
+            if (meetingResult.IsFailure)
+            {
+                return BadRequest(meetingResult.Error);
+            }
 
             return Created();
         }
@@ -70,7 +72,7 @@ namespace HighLoadDevelopment.Controllers
 
         [HttpPut("update/{meetingId:guid}")]
         [Authorize]
-        public async Task<IActionResult> UpdateMeetingAsync([FromRoute] Guid meetingId, [FromBody] UpdateMeetingRequest updateMeetingRequest)
+        public async Task<IActionResult> UpdateMeetingAsync([FromRoute] Guid meetingId, [FromForm] UpdateMeetingRequest updateMeetingRequest)
         {
             Guid userId = Guid.Parse(User.FindFirst("UserIdentity")!.Value);
             var result = await _meetingService.EditMeeting(updateMeetingRequest, meetingId, userId);

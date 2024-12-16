@@ -93,23 +93,40 @@ namespace HighLoadDevelopment.Services
             TimeOnly timeEnd = TimeOnly.Parse(createMeetingRequest.TimeEnd);
 
 
-            var meeting = Meeting.CreateMeeting(userId, date, timeStart, timeEnd, 
-                createMeetingRequest.Name, createMeetingRequest.Location, 
-                createMeetingRequest.Description, createMeetingRequest.MaxGuest);
 
-            List<MeetingsAndTags> meetingsAndTags = [];
-            createMeetingRequest.TagIds.ForEach(t => meetingsAndTags.Add(new MeetingsAndTags()
+            var meetsCreatedCount = await _context.Meetings
+                .CountAsync(m => m.UserId == userId && m.Deleted_At == null && m.Deleted_By == null);
+
+            var userRating = _context.Users
+                .AsNoTracking()
+                .First(u => u.Id == userId)
+                .Rating;
+
+            var maximumMeetsToCreateCount = User.CanUserCreateMeeting(userRating);
+
+
+
+            if (maximumMeetsToCreateCount > meetsCreatedCount)
             {
-                Created_At = DateTime.UtcNow,
-                Created_By = userId,
-                TagId = t,
-                MeetingId = meeting.Id
-            }));
+                var meeting = Meeting.CreateMeeting(userId, date, timeStart, timeEnd,
+                    createMeetingRequest.Name, createMeetingRequest.Location,
+                    createMeetingRequest.Description, createMeetingRequest.MaxGuest);
 
-            await _context.MeetingsAndTags.AddRangeAsync(meetingsAndTags);
-            await _context.Meetings.AddAsync(meeting);
-            await _context.SaveChangesAsync();
-            return Result.Success();
+                List<MeetingsAndTags> meetingsAndTags = [];
+                createMeetingRequest.TagIds.ForEach(t => meetingsAndTags.Add(new MeetingsAndTags()
+                {
+                    Created_At = DateTime.UtcNow,
+                    Created_By = userId,
+                    TagId = t,
+                    MeetingId = meeting.Id
+                }));
+
+                await _context.MeetingsAndTags.AddRangeAsync(meetingsAndTags);
+                await _context.Meetings.AddAsync(meeting);
+                await _context.SaveChangesAsync();
+                return Result.Success();
+            }
+            return Result.Failure("Meets to create limit is achieved");
         }
 
 

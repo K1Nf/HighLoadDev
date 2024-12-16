@@ -92,7 +92,7 @@ fetch(url, {
 
 
         let img = document.createElement('img');
-        //img.src = imageLink;
+        img.src = imageLink;
         img.className = "leftpartimg";
 
         let h2 = document.createElement('h2');
@@ -174,7 +174,7 @@ fetch(url, {
 
 
         // Заполнение левого дива аватаркой, ником и кнопкой 'подробнее'
-        //leftpartdiv.appendChild(img);
+        leftpartdiv.appendChild(img);
         leftpartdiv.appendChild(h2);
         leftpartdiv.appendChild(a);
 

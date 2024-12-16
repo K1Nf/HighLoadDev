@@ -16,6 +16,7 @@ namespace HighLoadDevelopment.Contracts
         [EmailAddress]
         public string? Email { get; set; }
         public string City { get; set; }
+        public string ImageLink { get; set; }
 
 
 

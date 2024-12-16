@@ -75,7 +75,15 @@ myform.addEventListener("submit", async (e) => {
         if (response.status == 200 || response.status == 201) {
             return "ok";
         }
-        
+        else {
+            alert("Превышен лимит созданных встреч. Чтобы создавать больше встреч повысьте свой рейтинг!");
+            function openUserPage() {
+                window.location.href = "../User/";
+            }
+
+            setTimeout(openUserPage, 1000);
+
+        }
         throw new Error('Network response was not ok');
     })
 

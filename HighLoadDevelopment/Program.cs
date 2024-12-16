@@ -67,7 +67,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             OnMessageReceived = context =>
             {
-                string? token = context.Request.Cookies["NeToken"];
+                string? token = context.Request.Cookies["NeToken"] ?? context.Request.Headers.Authorization;
+
+                //context.Request.Cookies["NeToken"]
 
                 if (token != null)
                 {
